@@ -10,7 +10,8 @@ Users should be able to:
 
 ### Desktop version
 
-![Desktop vesrion #1](./assets/images/desktop-version.png)
+![Desktop vesrion ](./assets/images/desktop-version.png)
+![Mobile vesrion ](./assets/images/mobile-version.png)
 
 ### Links
 

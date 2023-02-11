@@ -40,6 +40,7 @@ body {
   margin: 0 auto;
   max-width: 144rem;
   padding: 8rem 0;
+  position: relative;
 }
 
 .main-nav-list {
@@ -59,6 +60,26 @@ body {
 .nav-link:hover:hover,
 .nav-link:hover:active {
   color: hsl(5, 85%, 63%);
+}
+
+/* MOBILE NAVIAGTION */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* HERO SECTION */
@@ -199,4 +220,91 @@ body {
 .step-description {
   font-size: 1.2rem;
   line-height: 1.6;
+}
+
+/* BELOW 400Ppx (Mobile) */
+@media (max-width: 25em) {
+  .nav-link:link,
+  .nav-link:visited {
+    display: none;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .section-hero {
+    padding: 0;
+  }
+
+  .hero {
+    padding: 0 3rem 0 3rem;
+  }
+
+  .header {
+    padding: 1.6rem 1.2rem 0 1.2rem;
+  }
+
+  .hero-text-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .heading-primary {
+    font-size: 3.2rem;
+  }
+
+  .hero-text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 0 0rem 0 0;
+    margin-top: 1.2rem;
+    width: 100%;
+  }
+
+  .cta {
+    padding: 1.2rem 1.6rem;
+    position: relative;
+    grid-column: 1/2;
+    margin-top: 2.4rem;
+    width: 50%;
+  }
+
+  .features {
+    width: 100%;
+    gap: 3.2rem;
+  }
+
+  .how-container {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  .step-img {
+    width: 30%;
+  }
+  .section-how {
+    padding: 2.4rem;
+    padding-top: 60rem;
+    padding-bottom: 8rem;
+  }
+
+  .step-teriary {
+    font-size: 1.6rem;
+  }
+
+  .section-related {
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    padding: 3.2rem 2.4rem 3.2rem 2rem;
+    max-width: 90%;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+  }
 }
